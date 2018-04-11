@@ -27,7 +27,7 @@ const safeRequire = (name) => {
   }
 };
 
-function runSandboxed(path) {
+const runSandboxed = (path) => {
   const fileName = path + 'main.js';
   const context = {
     module: {},
@@ -54,7 +54,7 @@ function runSandboxed(path) {
     // We can access a link to exported interface from sandbox.module.exports
     // to execute, save to the cache, print to console, etc.
   });
-}
+};
 
 runSandboxed('./applications/application1/');
 runSandboxed('./applications/application2/');
