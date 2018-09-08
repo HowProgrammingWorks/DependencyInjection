@@ -7,7 +7,7 @@
 // Print from the global context of application module
 api.console.log('From application1 global context');
 
-module.exports = function() {
+module.exports = () => {
   // Print from the exported function context
 
   api.fs.readFile('../../README.md', (err, data) => {

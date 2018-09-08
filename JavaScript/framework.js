@@ -12,12 +12,12 @@ api.sandboxedFs = require('sandboxed-fs');
 
 const { cloneInterface, wrapFunction } = require('./wrapper');
 
-const log = (s) => {
+const log = s => {
   console.log('Prints something from sandbox');
   console.log(s);
 };
 
-const safeRequire = (name) => {
+const safeRequire = name => {
   if (name === 'fs') {
     const msg = 'You dont have access to fs API';
     console.log(msg);
@@ -27,7 +27,7 @@ const safeRequire = (name) => {
   }
 };
 
-const runSandboxed = (path) => {
+const runSandboxed = path => {
   const fileName = path + 'main.js';
   const context = {
     module: {},

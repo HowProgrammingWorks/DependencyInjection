@@ -7,7 +7,7 @@
 // Print from the global context of application module
 api.console.log('From application2 global context');
 
-module.exports = function() {
+module.exports = () => {
   // Print from the exported function context
   api.timers.setTimeout(() => {
     api.console.log('From application2 exported function');

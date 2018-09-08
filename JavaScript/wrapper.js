@@ -25,7 +25,7 @@ const wrapFunction = (key, fn) => {
   };
 };
 
-const cloneInterface = (anInterface) => {
+const cloneInterface = anInterface => {
   const clone = {};
   let key, fn;
   for (key in anInterface) {
