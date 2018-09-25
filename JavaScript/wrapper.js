@@ -7,7 +7,7 @@ const wrapFunction = (key, fn) => {
     console.dir({ args });
     if (args.length > 0) {
       let callback = args[args.length - 1];
-      if (typeof(callback) === 'function') {
+      if (typeof callback === 'function') {
         args[args.length - 1] = (...args) => {
           console.log('Callback: ' + key);
           callback(...args);
@@ -27,9 +27,8 @@ const wrapFunction = (key, fn) => {
 
 const cloneInterface = anInterface => {
   const clone = {};
-  let key, fn;
-  for (key in anInterface) {
-    fn = anInterface[key];
+  for (const key in anInterface) {
+    const fn = anInterface[key];
     clone[key] = wrapFunction(key, fn);
   }
   return clone;
