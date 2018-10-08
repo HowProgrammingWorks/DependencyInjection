@@ -1,10 +1,10 @@
 {
   "name": "diExample",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dependency Injection Example",
   "license": "MIT",
   "dependencies": {
-    "sandboxed-fs": "^0.3.1"
+    "sandboxed-fs": "^0.3.2"
   }
 }
