@@ -1,4 +1,4 @@
-## Pependency Injection
+## Dependency Injection
 
 Purpose: learn how to create sandboxed context for modues to separate them and
 minimize cross-modules code coupling, extracting at least two abstraction layers
