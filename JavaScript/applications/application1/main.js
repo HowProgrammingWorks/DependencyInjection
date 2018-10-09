@@ -12,7 +12,7 @@ module.exports = () => {
 
   api.fs.readFile('../../README.md', (err, data) => {
     if (err) {
-      console.log(err.message);
+      api.console.log(err.message);
       return;
     }
     api.console.log(data.toString());
