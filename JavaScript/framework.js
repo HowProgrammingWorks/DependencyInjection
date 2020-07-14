@@ -5,7 +5,7 @@
 // as a global context and receives exported application interface
 
 // The framework can require core libraries
-global.api = {};
+const api = {};
 api.fs = require('fs');
 api.vm = require('vm');
 api.sandboxedFs = require('sandboxed-fs');
