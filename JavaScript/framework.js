@@ -6,8 +6,8 @@
 
 // The framework can require core libraries
 const api = {};
-api.fs = require('fs');
-api.vm = require('vm');
+api.fs = require('node:fs');
+api.vm = require('node:vm');
 api.sandboxedFs = require('sandboxed-fs');
 
 const { cloneInterface, wrapFunction } = require('./wrapper');
