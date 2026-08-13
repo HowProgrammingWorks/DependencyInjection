@@ -49,7 +49,7 @@ const runSandboxed = (path) => {
     // Run an application in sandboxed context
     const script = new api.vm.Script(src, fileName);
     const f = script.runInNewContext(sandbox);
-    if (f) f();
+    f?.();
 
     // We can access a link to exported interface from sandbox.module.exports
     // to execute, save to the cache, print to console, etc.
